@@ -1,0 +1,1582 @@
+@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+
+html {
+    box-sizing: border-box;
+    background-color: rgba(229, 225, 242, 0.2);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+/***** DARK MODE *****/
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+    filter: invert(1) hue-rotate(180deg);
+
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+/* if we check it and target (+ adjacent) the ball we change color*/
+
+.checkbox-label {
+    background: #9a9a9a;
+    display: flex;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+
+.ball {
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s linear;
+
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+/*********/
+
+.darkMode {
+    background-color: black;
+}
+
+.darkMode > .box {
+    background-color: white;
+    color: black;
+}
+
+/*********/
+
+
+.nav {
+    padding: 6px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.nav-menu li a:hover {
+    color: #6667AB;
+}
+
+.nav-menu li .hover-color a:hover {
+    color: #6667AB;
+}
+
+.nav-menu li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #292B94;
+    transition: all 0.6s ease;
+}
+
+.nav-menu li a:hover:before {
+    width: 100%;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #6667AB;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 22px;
+    border: none;
+    transition: all 0.4s;
+    box-shadow: 1px 2px 4px 0px #000000a3;
+}
+
+.btn_moon {
+    color: #000000;
+    background: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.nav-menu li a:hover {
+    height: 0px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #292B94;
+}
+
+.btn:hover::before {
+    transform: scale(1.1);
+    background: #292B94;
+    color: white;
+}
+
+.btn_send {
+    background-color: #6667AB;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 22px;
+    border: none;
+    transition: all 0.4s;
+    box-shadow: 1px 2px 4px 0px #000000a3;
+    font-size: larger;
+}
+
+.btn_send:hover {
+    transform: scale(1.1);
+    background: #292B94;
+    color: white;
+}
+
+.title-second {
+    text-align: center;
+    margin-top: 62px;
+    margin-bottom: 42px;
+}
+
+.title-third {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 22px;
+}
+
+.title-second-result-page {
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+
+/*------------Hero section-------------*/
+
+hr {
+    padding: 0;
+    background-color: #292B94;
+    border: 0;
+    border-top: double #6667AB;
+    height: 1px;
+
+}
+
+.hero-section {
+    background-color: rgba(229, 225, 242, 0.2);
+    background-size: cover;
+    padding: 0px 120px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section-content {
+    width: 50%;
+}
+
+.hero-section-img {
+    width: 90%;
+}
+
+.hero-section-img img {
+    width: 100%;
+}
+
+.hero-section .btn {
+    margin-top: 30px;
+}
+
+
+/*-----------Benefits--------------*/
+
+.benefits {
+    display: flex;
+    padding: 80px 120px;
+    background-color: rgba(229, 225, 242, 0.2);
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.benefits-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 256px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    background: rgb(229, 225, 242);
+}
+
+.benefits-card-header {
+    text-align: center;
+    flex: 1;
+}
+
+.benefits-card-body {
+    padding: 2px 20px;
+    text-align: center;
+}
+
+.benefits-card-body .benefits-title {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+.benefits-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.benefits-card img:nth-child(1) {
+    width: 50%;
+}
+
+.benefits article:nth-child(2) header img {
+    width: 85%;
+}
+
+.benefits article:nth-child(3) header img {
+    width: 65%;
+}
+
+
+/*-----------Check results --------------*/
+
+.check-results {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 120px;
+    background: radial-gradient(#acc9ff, #68e8f1);
+    border-radius: 10px;
+    padding: 0 38px;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+}
+
+.check-result-icon-align {
+    display: flex;
+    align-items: center;
+}
+
+.check-results article:nth-of-type(3) {
+    flex-grow: 3;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.check-results-check {
+    align-self: center;
+}
+
+.check-result-icon {
+    text-align: center;
+    text-decoration: none;
+    width: 65px;
+    padding: 10px 12px;
+    font-size: 30px;
+    align-items: center;
+}
+
+.check-results-btn {
+    font-size: 20px;
+    background-color: #6667AB;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 22px;
+    border: none;
+    transition: all 0.4s;
+    box-shadow: 1px 2px 4px 0px #000000a3;
+}
+
+.check-results-btn a {
+    color: white;
+}
+
+.check-results-btn:hover {
+    transform: scale(1.1);
+    background: #292B94;
+    color: white;
+}
+
+.check-results-btn:hover a {
+    color: white;
+}
+
+
+/*-----------Tests------------*/
+
+.tests {
+    margin: 80px 120px;
+}
+
+.test-header {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border-bottom: 4px solid #6667AB;
+    width: 109px;
+}
+
+.cards-tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.test-title {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.test-title-most-common,
+.test-title-other-tests {
+    text-align: center;
+}
+
+.open-modal {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+    padding: 42px;
+    width: 256px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+    transition: all 0.2s;
+    align-content: center;
+}
+
+.card-title {
+    margin-top: 24px;
+}
+
+.card button {
+    border: none;
+    background: none;
+}
+
+.modal {
+    position: fixed;
+    /*когато потребителя скролва модула да го проследява, а не да остане на едно място */
+    top: 50%;
+    left: 50%;
+    /*центрира на целия екран*/
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    /*scale(0) makes it invisible*/
+    /*центрира в зависимост от контейнера*/
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    /*даваме му голям з-индекс и по-напред от този с по-малък*/
+    background-color: #F0D560;
+    width: 500px;
+    /* max-width: 80%;*/
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F0D560;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    /*все едно не е бутон*/
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    /*за да НЕ можем да кликаме на бутона за чети още, когато не е актвиен*/
+}
+
+#overlay.active {
+    opacity: 80%;
+}
+
+.card-1,
+.card-3,
+.card-5,
+.card-7 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2,
+.card-4,
+.card-6,
+.card-8 {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-icon {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    background: #004e6c;
+    width: 65px;
+    border-radius: 50%;
+    height: 55px;
+    padding: 10px 12px;
+    font-size: 30px;
+}
+
+.card button,
+.open-modal .fas {
+    color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+.open-modal .fas {
+    margin-left: 8px;
+}
+
+.two-col-tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.other-tests ol {
+    counter-reset: li;
+    /* Initiate a counter */
+    list-style: none;
+    /* Remove default numbering */
+    list-style: decimal;
+    /* Keep using default numbering for IE6/7 */
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+.other-tests ol ol {
+    margin: 0 0 0 2em;
+    /* Add some left margin for inner lists */
+}
+
+.other-tests li {
+    position: relative;
+    display: block;
+    padding: 10px 30px 10px 30px;
+    /**padding: .4em;*/
+    margin: 5px 32px;
+    background: rgba(123, 125, 199, 0.18);
+    color: #444;
+    width: 550px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .3s ease-out;
+}
+
+.other-tests li:hover {
+    background: #eee;
+}
+
+.other-tests li:hover::before {
+    transform: rotate(360deg);
+}
+
+.other-tests li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    background: #292B94;
+    color: white;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    border: 4px solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 32px;
+    transition: all .3s ease-out;
+}
+
+
+/*--------Information for Patient---------*/
+
+.form-inf-patient {
+    margin: 32px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-names {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    justify-content: center;
+}
+
+.col-names-vertical {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.col-names label {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.col-names input[type="text"],
+.col-names-vertical input[type="text"],
+.col-names-vertical input[type="number"] {
+    margin: 12px;
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-names input[type="email"] {
+    margin: 12px;
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-gender_blood {
+    display: flex;
+    justify-content: center;
+}
+
+
+.col-gender_blood .genders,
+col-gender_blood, select {
+    margin: 12px;
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+}
+
+.col-gender_blood input[type="text"] {
+    margin: 12px;
+    border-radius: 10px;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    border: 2px solid #7B7DC7;
+}
+
+.col-personcard {
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-personcard input[type=date] {
+    margin: 12px;
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+    width: 270px;
+    height: 40px;
+    display: flex;
+}
+
+.col-personcard label {
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: -6px;
+}
+
+#add_btn {
+    margin: 32px;
+}
+
+.department_header {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-bottom: 4px solid #7B7DC7;
+    width: 260px;
+}
+
+.department-title {
+    text-align: center;
+    margin: 12px 0;
+    margin-top: 60px;
+}
+
+
+/*------------Make test registration-------------*/
+
+.tr_testreg {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0 14px;
+}
+
+.tr_testreg a {
+    color: white;
+}
+
+button.btn.reg.back {
+    margin-left: 18px;
+}
+
+.col_test {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-reg-test {
+    margin: 32px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-reg-test .tr_testreg label {
+    padding: 4px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.check_info {
+    margin: 14px;
+}
+
+#check_info {
+    margin: 32px;
+}
+
+#_btn_test_reg button {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+#_EGN_tr,
+#_date,
+#_test_id_tr {
+    border-radius: 10px;
+    border: 2px solid #6667AB;
+    width: 270px;
+    height: 40px;
+    display: flex;
+}
+
+#_type_test {
+    border-radius: 10px;
+    border: 2px solid #6667AB;
+    width: 270px;
+    height: 40px;
+    display: flex;
+}
+
+#_btn_test_reg {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+
+#_btn_test_reg_sp {
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+}
+
+#_btn_test_reg_sp button a {
+    text-decoration: none;
+    color: black;
+}
+
+#_btn_test_reg_sp button a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.form-group-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*------------Doctor-------------*/
+
+.results-patiant {
+    margin: 32px 120px;
+}
+
+.res-name-egn-patient {
+    text-align: center;
+}
+
+.res-name-egn-patient-title {
+    margin: 6px;
+}
+
+.textarea-doctor {
+    width: 470px;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid #6667AB;
+    border-radius: 10px;
+}
+
+
+/*------------Make an appointment for a patient-------------*/
+
+.testreg_row {
+    display: flex;
+}
+
+
+/*------------About-------------*/
+
+.about {
+    margin: 80px 120px;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-header {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    border-bottom: 4px solid #7B7DC7;
+    width: 180px;
+}
+
+
+.about-title {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.about-text-paragraph {
+    margin-right: 20px;
+    width: 70%;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+
+/*------------Contacts-------------*/
+
+.contacts-wapper {
+    padding: 40px 120px 80px 120px;
+    background-color: rgba(229, 225, 242, 0.2);
+}
+
+.contacts-header {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    border-bottom: 4px solid #7B7DC7;
+    color: white;
+    width: 180px;
+}
+
+.contacts-content {
+    display: flex;
+}
+
+.contacts-title {
+    text-align: center;
+    margin: 12px 0;
+    color: black;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts-details {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts-details-card {
+    width: 200px;
+    display: flex;
+    height: 131px;
+    border: 2px solid #7B7DC7;
+    border-radius: 10px;
+    background-color: rgba(123, 125, 199, 0.2);
+    margin-right: 14px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-details-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0 3px 0px #9a9a9a;
+}
+
+.fas,
+.far {
+    font-size: 24px;
+}
+
+.contacts-details-card-title {
+    margin-top: 22px;
+    margin: 22px 0 0 0;
+}
+
+.contacts-details-card-text {
+    margin-top: 8px;
+}
+
+.contacts-details i {
+    color: #7B7DC7;
+}
+
+.contacts-form-header {
+    margin: 0 0 20px 0;
+}
+
+.contacts-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0 3px 0px #9a9a9a;
+}
+
+.contacts-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0 3px 0px #9a9a9a;
+}
+
+
+/*--------Login----------*/
+
+.form-login-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 120px;
+    background: white;
+}
+
+.title-login-signup {
+    margin: 0;
+}
+
+.form-group input[type="text"] {
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input[type="password"] {
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: flex;
+    padding-bottom: 8px;
+    margin-right: 1%;
+    justify-content: flex-start;
+}
+
+.form-group {
+    padding-bottom: 24px;
+}
+
+
+.form-group-hospitalization input[type="text"] {
+    border-radius: 10px;
+    border: 2px solid #7B7DC7;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.merge_label_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btn-primary,
+.btn-secondary {
+    width: 182px;
+    height: 46px;
+    border-color: #6667AB;
+}
+
+.form-login-signup .link a {
+    color: #6667AB;
+    text-decoration: none;
+}
+
+.form-login-signup span {
+    display: flex;
+    color: red;
+}
+
+.alert-danger {
+    display: flex;
+    color: red;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-group .options {
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #6667AB;
+}
+
+
+/* !!!!!!!!! */
+
+.log_def_option {
+    color: rgb(173, 173, 173);
+}
+
+
+/*--------Results----------*/
+
+.welcome {
+    text-align: center;
+    margin: 38px 120px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.style-table {
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/*SCROLL FOR DIRECTOR
+.scroll {
+   width: 100%;
+   border-spacing: 0;
+}
+
+.scroll tbody,
+.scroll thead tr { display: block; }
+
+.scroll tbody {
+   height: 400px;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.scroll tbody td,
+.scroll thead th {
+   width: 140px;
+
+}
+
+.scroll thead th:last-child {
+   width: 156px;
+}
+*/
+
+
+/*SCROLL FOR PERMISSIONS
+.scroll_permission {
+   width: 80%;
+   border-spacing: 0;
+}
+
+.scroll_permission tbody,
+.scroll thead tr {
+
+    display: list-item;
+    width: fit-content;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scroll_permission tbody {
+   height: 400px;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.scroll_permission tbody td,
+.scroll_permission thead th {
+   width: 100%;
+}
+
+.scroll_permission thead th:last-child {
+   width: 156px;
+}
+*/
+
+td,
+tr {
+    background-color: rgba(229, 225, 242, 0.2);
+    border: 0.1px solid #6667AB;
+    text-align: center;
+    padding: 10px;
+}
+
+
+th {
+
+    background-color: #7B7DC7;
+    border: 0.1px solid #6667AB;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.table-results {
+    display: flex;
+    margin: 12px 120px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-results button {
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.table-results button a {
+    text-decoration: none;
+    color: black;
+}
+
+.table-results button:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/*----Footer----*/
+
+.footer {
+    background-color: #ffffff;
+}
+
+.footer-col {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 8px;
+}
+
+.footer-list-item a {
+    color: #6667AB;
+}
+
+.mvyar-lab li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.footer-list li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #292B94;
+    transition: all 0.6s ease;
+}
+
+.footer-list li a:hover:before {
+    width: 100%;
+}
+
+.footer-list {
+    padding: 0;
+}
+
+.footer-list-item {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footer-list-item-link,
+.footer-list-item-tests,
+.footer-list-item-contacts {
+    text-decoration: none;
+}
+
+.type-tests i {
+    color: black;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+.social-media i {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.footer-contacts i {
+    color: black;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+.copyright {
+    color: rgb(255, 255, 255);
+    background-color: #6667AB;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 0;
+}
+
+
+/*---------Admin panel---------*/
+
+
+/* limit the text show in the table for the researches specifically the description part */
+
+.limit-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.admin-panel-section {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.space-admin {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.space-crud-button {
+    padding: 1em;
+}
+
+.space-crud-doctor-button {
+    padding: 0.5em;
+}
+
+.hospital_manipulation_margin {
+    margin: 0.5em;
+}
+
+.red_message {
+    color: red;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*------------ADMIN PAGE-------------*/
+.title-admin_page {
+    text-align: center;
+    margin-top: 62px;
+    margin-bottom: 10px;
+}
+
+.wrap-manipulation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 34px;
+    flex-direction: row;
+}
+
+.manipulation {
+    margin: 30px;
+}
+
+
+.make-reports {
+    display: flex;
+    justify-content: center;
+}
+
+.make-reports .inp-egn {
+    margin: 12px 0;
+}
+
+.user-manipulation,
+.research-manipulation {
+    width: 350px;
+}
+
+.admin-form a {
+    color: rgb(255, 255, 255);
+}
+
+
+.form_update_permission input[type=text] {
+    border-radius: 10px;
+    border: 2px solid #6667AB;
+    width: 270px;
+    height: 40px;
+    margin-right: 32px;
+}
+
+
+.update_permission,
+.delete_user,
+.delete_research,
+.delete_test_made {
+    margin: 62px 120px;
+}
+
+.form_update_permission {
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#btn_delete:hover {
+    background: #df5f5f;
+}
+
+.research-form {
+    display: flex;
+    justify-content: center;
+    margin: 32px 120px;
+}
+
+.label-left {
+    margin-left: 12px;
+}
+
+.btn-update-test {
+    margin-top: 14px;
+}
+
+.form-group-create {
+    display: flex;
+    flex-direction: column;
+}
+
+.research-form-create {
+    margin: 62px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-form-create .form-group input[type="text"] {
+    margin-bottom: 12px;
+}
+
+.research-form .input-research {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    width: 390px;
+}
+
+.invalid-feedback {
+    color: red;
+    margin-bottom: 6px;
+}
+
+.valid-feedback {
+    color: rgb(11, 153, 23);
+    margin-bottom: 6px;
+}
+
+.input-research input[type="text"],
+.update-test-article input[type="text"],
+.space-admin-nurse input[type="type"] {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 12px;
+    border-radius: 10px;
+    border: 2px solid #6667AB;
+    width: 270px;
+    height: 40px;
+    display: flex;
+}
+
+.option_department {
+    margin: 12px;
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #6667AB;
+}
+
+
+.update-test-article textarea {
+    margin: 12px;
+    width: 470px;
+    height: 150px;
+    border: 2px solid #6667AB;
+    border-radius: 10px;
+}
+
+.update-test-article input[name="test_id"] {
+    display: none;
+}
+
+.test-code-test-name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.test-code-test-name .btn {
+    display: flex;
+    align-items: center;
+}
+
+.table-report {
+    margin: 62px 120px;
+    padding: 0;
+    width: 80%;
+    display: flex;
+}
+
+.table-report td,
+.table-report th,
+.table-report tr {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn_edit {
+    color: white;
+    background: #7B7DC7;
+    padding: 3px 9px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: center;
+    margin-right: 10%;
+}
+
+.btn_delete {
+    color: white;
+    background: #a52a2a;
+    padding: 3px 9px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: center;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_director {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.space_around_button {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.space_under {
+    margin-bottom: 3em;
+}
+
+.space_above {
+    margin-top: 3em;
+}
+
+/*.add_doctor{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}*/
+
+.add_doctor_head_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_doctor_head_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.read_section {
+
+}
+
+.title-display-all-info-people {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+
+.wrap-manipulation-statistics {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*      STATISTICS       */
+.statistics .wrap-manipulation a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,351 @@
+/* Wide screen desktop */
+
+@media (max-width: 1440px) {
+    .contacts-details {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .other-tests li {
+        width: 430px;
+    }
+}
+
+
+/* normal desktop */
+
+@media (max-width: 1280px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-image {
+        margin-bottom: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu li {
+        margin: 10px;
+    }
+
+    /*---------benefits--------*/
+    .benefits {
+        margin: 0 auto;
+    }
+
+    .benefits-card {
+        margin: 16px 12px;
+    }
+
+    .contacts-details {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .other-tests li {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1230px) {
+    .other-tests li {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1090px) {
+    /*---------contacts--------*/
+    .contacts-details-card {
+        width: 160px;
+        height: 108px;
+        margin-right: 8px;
+    }
+
+    /*   .fas,
+       .far {
+           color: #64c4ed;
+           font-size: 18px;
+           margin-top: 14px;
+       }*/
+}
+
+@media (max-width: 992px) {
+    /*---------benefits--------*/
+    .benefits {
+        margin: 0 auto;
+    }
+
+    .benefits-card {
+        margin: 16px 0;
+    }
+
+    /*---------about--------*/
+    .about {
+        margin: 0 auto;
+        padding: 80px 80px;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+    /*---------contacts--------*/
+    .contacts-details-card {
+        width: 160px;
+        height: 108px;
+        margin-bottom: 8px;
+    }
+
+    /*.fas,
+    .far {
+        color: #64c4ed;
+        font-size: 18px;
+        margin-top: 14px;
+    }*/
+    .contacts-details-card-title {
+        margin: 12px 0 0;
+    }
+
+    .contacts-details-card-text {
+        margin-top: 6px;
+        font-size: 10px;
+    }
+
+    /*---------footer--------*/
+    .footer-col {
+        flex-wrap: wrap;
+    }
+
+    .footer-col article {
+        margin-right: 12px;
+    }
+
+}
+
+
+/* tablets */
+
+@media (max-width: 768px) {
+    /*---------benefits--------*/
+    .benefits {
+        margin: 0 auto;
+    }
+
+    .benefits-card {
+        margin: 20px 0;
+        height: 400px;
+        padding: 40px;
+    }
+
+    .other-tests li {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    /*---------about--------*/
+    .about {
+        padding: 80px 80px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    /*---------contacts--------*/
+    .contacts-details-card {
+        width: 160px;
+        height: 108px;
+        margin-bottom: 8px;
+    }
+
+    /*---------footer-------*/
+    .contacts-details {
+        width: 50%;
+    }
+
+    .about-img {
+        display: none;
+    }
+}
+
+/* phones */
+@media (max-width: 576px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section {
+        height: 500px;
+        width: 100%;
+    }
+
+    .hero-section {
+        background-color: rgba(229, 225, 242, 0.2);
+        background-size: cover;
+        padding: 0 20px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .hero-section-img img {
+        display: none;
+    }
+
+    /*---------benefits--------*/
+    .benefits {
+        margin: 0 auto;
+    }
+
+    .benefits-card {
+        margin: 16px 0;
+        height: auto;
+        padding: 40px;
+    }
+
+    /*---------about--------*/
+    .about {
+        padding: 80px 80px;
+    }
+
+
+    .about-text {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    /*---------check results--------*/
+    .check-results {
+        flex-wrap: wrap;
+    }
+
+    .check-results-title {
+        text-align: center;
+    }
+
+    .check-results-check {
+        padding: 12px;
+        margin: 0 auto;
+    }
+
+    /*---------footer-------*/
+    .contacts {
+        display: block;
+    }
+
+    .contacts-details {
+        width: 120%;
+    }
+
+    .footer-col {
+        padding: 20px 30px;
+    }
+
+    /*---------other-------*/
+    .textarea-doctor {
+        width: 270px;
+    }
+
+    .wrap-manipulation {
+        flex-direction: column;
+    }
+
+    .button-group-responsive {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .wrap-manipulation-statistics {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+        flex-direction: column;
+    }
+
+    .contacts-wapper {
+        padding: 50px;
+        background-color: rgba(229, 225, 242, 0.2);
+    }
+
+    .contacts-details {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .other-tests ol {
+        counter-reset: li;
+        list-style: none;
+        list-style: decimal;
+        padding: 0;
+        width: 320px;
+        display: flex;
+        text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .form-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+}
